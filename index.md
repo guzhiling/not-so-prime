@@ -3,7 +3,7 @@
 
 ## Coding
 - [Atlas: R -> MATLAB](coding/MATLAB-R-cheatsheet.md)
-- [R:dplyr](coding/2020-04-14-dplyr.html)
+- [R:dplyr](coding/2020-04-14-dplyr.Rmd)
 - [Basic Shell/terminal commands](/coding/TerminalCommands.md)
 
 ## Blogs

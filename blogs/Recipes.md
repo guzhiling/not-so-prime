@@ -1,15 +1,17 @@
 ---
 title: Recipes
-date: "2020-06-12"
 ---
 
-(Last updated: 2021-02-20)
 
 These recipes are inspired by my family, friends, and online sources!❤
 
-## Baking
+### Dish of 2022: lemongrass chicken [credit](https://www.youtube.com/watch?v=AJtMlTnqyw0)
+Literally, all you need is lemongrass, chicken, and fish source (which can be replaced by soy sauce). A simple but flavorful meal!
+I personally don't add as much sugar as in the recipe.
 
-### Sugar Cookie *(credit: https://foodsguy.com/sugar-cookies-without-butter/. My Signature!)*
+
+
+### Sugar Cookie [credit](https://foodsguy.com/sugar-cookies-without-butter/) 
 
 - Ingredients:
   - 2 cups and 1 tablespoon of all-purpose flour
@@ -29,9 +31,7 @@ These recipes are inspired by my family, friends, and online sources!❤
   Roll dough into 1.5 inch balls and place on a cookie sheet, flatten with your hand or a pint glass to create a flat circle.
 - Yield: 12 
 
-
-## Main Dish
-### 卤牛肉 / Beef Stew *(My Signature!)*
+### 卤牛肉 / Beef Stew 
 - 材料：黄牛肉两斤，切成四方块  
 - 配料：红干辣椒3个，冰糖：5颗，八角：2颗，桂皮：半片，老抽：2勺，美味鲜：半小碗，黄酒：大半碗。蒜头：4颗。  
 - 做法：牛肉焯水洗净，入高压锅，把上述调料一次性放入，高压锅气上来后小火40分钟，开锅后大火收汁。放入保鲜碗里。顺便卤蛋的话：煮鸡蛋，剥壳之后加入和肉一起煮。
