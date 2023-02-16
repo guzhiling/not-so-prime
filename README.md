@@ -1,1 +1,1 @@
-# not-so-prime
+Not so prime.

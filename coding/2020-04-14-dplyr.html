@@ -1,0 +1,77 @@
+---
+title: "dplyr Cheatsheet"
+output: 
+  blogdown::html_page
+date: "2020-05-01"
+author: Ling
+GHissueID: 1
+categories:
+  - notes
+  
+tags: 
+  - R
+  - dplyr
+---
+
+
+
+<p>See <code>dplyr</code> cheatsheet <a href="https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">here</a>. Remark: There is conflict between the <code>dplyr</code> package and <code>MASS</code> package, the <code>select</code> function, in particular, can cause problem. Remember to check your environment before implement the program! Another solution is to add <code>dplyr::</code> before the functions from <code>dplyr</code> package. This can be helpful especially when you are coding in a big team where people use different packages and environments.</p>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>data(&quot;iris&quot;)
+species &lt;- unique(iris$Species)
+## Manually created ID mapping
+map &lt;- data.frame(ID = 1:length(species), Species = species); map</code></pre>
+<pre><code>##   ID    Species
+## 1  1     setosa
+## 2  2 versicolor
+## 3  3  virginica</code></pre>
+<pre class="r"><code>## Manually created Missing data
+iris[1:3,2] = NA
+## A peak of current dataset
+head(iris)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1          NA          1.4         0.2  setosa
+## 2          4.9          NA          1.4         0.2  setosa
+## 3          4.7          NA          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
+<pre class="r"><code>##### ROWS
+df = iris %&gt;% 
+  mutate_all(~replace (., is.na(.), 0)) %&gt;% ## Replace NA with 0 
+  filter(!is.na(Sepal.Width)) %&gt;% ## Select rows without NA in Sepcal.Width
+  mutate(Sepal.Length= replace(Sepal.Length, Sepal.Length&gt;5, &quot;large&quot;) ) %&gt;%## Replace entries with condition
+  mutate(Sepal.Length= replace(Sepal.Length, Sepal.Length&lt;=5, &quot;small&quot;) )  %&gt;% 
+  mutate(Species = gsub(&#39; &#39;,&#39;&#39;, Species)) %&gt;% ## 
+  mutate(Species = tolower(Species)) ## toupper: uppercase, tolower: lowercase</code></pre>
+<pre><code>## Warning in `[&lt;-.factor`(`*tmp*`, list, value = 0): invalid factor level, NA
+## generated</code></pre>
+<pre class="r"><code>head(df)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1        large         0.0          1.4         0.2  setosa
+## 2        small         0.0          1.4         0.2  setosa
+## 3        small         0.0          1.3         0.2  setosa
+## 4        small         3.1          1.5         0.2  setosa
+## 5        small         3.6          1.4         0.2  setosa
+## 6        large         3.9          1.7         0.4  setosa</code></pre>
+<pre class="r"><code>#### COLUMNS
+df2 = iris%&gt;%
+  right_join(map, by = &quot;Species&quot;) %&gt;% ## Join according to the right matrix
+  select(Sepal.Length, Petal.Width, ID) %&gt;% ## Select columns
+  select( - c(Petal.Width) ) ## Delete columns
+head(df2)</code></pre>
+<pre><code>##   Sepal.Length ID
+## 1          5.1  1
+## 2          4.9  1
+## 3          4.7  1
+## 4          4.6  1
+## 5          5.0  1
+## 6          5.4  1</code></pre>
