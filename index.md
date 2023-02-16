@@ -13,4 +13,4 @@
 - [National Mourn](/blogs/2020-04-04-nationalmorn.md)
 
 ## 4
-- [Projective Spaces](/blogs/ProjectiveSpace.md)
+- [Projective Spaces](/blogs/ProjectiveSpace.pdf)
