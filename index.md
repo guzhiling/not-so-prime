@@ -14,3 +14,4 @@
 
 ## 4
 - [Projective Spaces](/blogs/ProjectiveSpace.pdf)
+- [Matrix Completion](/blogs/MatrixCompletion_20221122/main.pdf)

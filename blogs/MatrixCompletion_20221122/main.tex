@@ -1,0 +1,610 @@
+\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[normalem]{ulem}
+\usepackage{mathtools, amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{undertilde}
+\usepackage{accents}
+\usepackage{color}
+\usepackage{mathrsfs}
+\usepackage{url}
+\usepackage{wrapfig}
+%% Packages
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{enumerate,verbatim}
+\usepackage[sf,small,center, compact]{titlesec}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{subfigure}
+\usepackage{ulem}
+\usepackage{array}
+\usepackage{url}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{ulem}
+\usepackage{algorithm2e}
+
+
+\usepackage{xr}
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+  \typeout{(#1)}
+  \@addtofilelist{#1}
+  \IfFileExists{#1}{}{\typeout{No file #1.}}
+}
+\makeatother
+
+\newcommand*{\myexternaldocument}[1]{%
+   \externaldocument{#1}%
+    \addFileDependency{#1.tex}%
+  \addFileDependency{#1.aux}%
+}
+\myexternaldocument{main}
+
+
+\setcounter{MaxMatrixCols}{10}
+\newcommand{\blind}{0}
+\setlength{\textheight}{9.0in}
+\setlength{\textwidth}{6.6in}
+\setlength{\topmargin}{-36pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+% \tolerance=500
+% \renewcommand{\baselinestretch}{2}
+\usepackage{natbib}
+
+% \setlength{\bibsep}{0.0pt}
+\titlelabel{\thetitle.\enspace}
+\titleformat*{\subsection}{\itshape\filcenter}
+
+\theoremstyle{remark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Please put your definitions here:        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Z}{\boldsymbol{Z}}
+\newcommand{\W}{\boldsymbol{W}}
+\newcommand{\CT}{\mathcal{T}}
+\newcommand{\var}{{\rm Var}}
+\newcommand{\cov}{{\rm Cov}}
+\newcommand{\diag}{{\rm diag}}
+\newcommand{\VEC}{{\rm vec}}
+\newcommand{\D}{{\tiny\rm D}}
+\newcommand{\cc}{{\tiny\rm c}}
+\newcommand{\I}{{\tiny\rm I}}
+\newcommand{\R}{{\tiny\rm R}}
+\newcommand{\E}{{\mathrm E}}
+\newcommand{\bs}[1]{{\boldsymbol{#1}^*}}
+\newcommand{\bb}[1]{{\boldsymbol {#1}}}
+%%% bigcdot
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+
+
+
+\def\as{\mathrm{a.s.}}
+\def\lv{\left\vert}
+\def\rv{\right\vert}
+\def\llv{\left\|}
+\def\rrv{\right\|}
+%\newcommand{\bs}[1]{if latin alphabet \boldsymbol{#1} else \mathbf{#1}}
+% \newcommand{\bs}{\boldsymbol}
+\newcommand*\sq{\mathbin{\vcenter{\hbox{\rule{.3ex}{.3ex}}}}}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+% \newtheorem{algorithm}[theorem]{Algorithm}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+% \newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newtheorem{remark}{{\sc Remark}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\floatstyle{ruled}
+
+
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{green}{rgb}{0,1,0}
+\definecolor{blue}{rgb}{0,0,1}
+\def\blue{\textcolor{blue}}
+\def\green{\textcolor{green}}
+\def\red{\textcolor{red}}
+\definecolor{lxy}{RGB}{90,0,90}
+\def\lxy{\textcolor{lxy}}
+\definecolor{zl}{RGB}{0,150,150}
+\def\zl{\textcolor{zl}}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{green}{rgb}{0,1,0}
+\definecolor{blue}{rgb}{0,0,1}
+\def\blue{\textcolor{blue}}
+\def\green{\textcolor{green}}
+\def\red{\textcolor{red}}
+\definecolor{lxy}{RGB}{120,0,120}
+\def\lxy{\textcolor{lxy}}
+\definecolor{lxysi}{RGB}{150,0,150}
+\def\lxysi{\textcolor{lxysi}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\tit.arg{{\bf Structure Identification of Space-time Epidemic Models}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \renewcommand{\theequation}{S.\arabic{equation}}
+% \renewcommand{\thesection}{\bf S.\arabic{section}}
+%\renewcommand{\thepage}{S.\arabic{page}}
+% \renewcommand{\thesubsection}{\bf S.\arabic{subsection}}
+% \renewcommand{\thetheorem}{S.\arabic{theorem}}
+% \renewcommand{\thelemma}{S.\arabic{lemma}}
+% \renewcommand{\thefigure}{S.\arabic{figure}}
+% \renewcommand{\thetable}{S.\arabic{table}}
+\setcounter{equation}{0}
+\setcounter{figure}{0} \setcounter{figure}{0}
+\setcounter{table}{0} \setcounter{table}{0}
+%\setcounter{page}{1} \setcounter{subsection}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{An brief note on row-rank matrix and tensor completion}
+\author{Zhiling Gu}
+\begin{document}
+\maketitle
+This report also serves as EE623 Term Paper in Fall 2022.
+
+
+\begin{abstract}
+In this report, we studied the Section 3.8 -- 3.9 of \cite{Chen:2021}, and Section 10.5 of \cite{vershynin:2018}. 
+Firstly, to estimate an incomplete matrix $\mathbf M^\ast$ of dimension $[n_1]\times [n_2]$,
+we consider the SVD of $\mathbf M^\ast = \bs U \bs\Sigma \mathbf V^{\ast\top}$ and the approximation $\mathbf M = \mathbf U \bs\Sigma \mathbf V^{\top}$ of $\mathbf M^\ast$.
+% The definition of incoherence parameter $\mu$ of $\mathbf M^\ast$ is introduced,after which matrix Bernstein inequality are introduced.
+The approximation accuracy of $\mathbf U$, $\mathbf V$, and $\mathbf M$ are assessed with the definition of incoherence parameter $\mu$ in Theorems 3.22--3.23 \citep{Chen:2021}, which are discussed in detail.
+Secondly, we explore the tensor completion problem with similar framework as low-rank matrix completion in Section 3.9 \citep{Chen:2021}.
+% The proofs of Lemma 3.24--3.25, and Theorem 3.26 are studied.
+
+% Then, we revisit the escape theorem in Section 9.4.2 of \cite{vershynin:2018}, and its application to exact recovery in Section 10.5.1 of \cite{vershynin:2018}.
+\end{abstract}
+
+\section{Why matrix completion}
+In the practice, it is extremely common to encounter missing data due to collection difficulty, erroneous data, and etc.
+And most of the data can be represented in the matrix. For example, if we consider each row of a matrix is the features/ measurements of a single subject, a matrix would represent the features of all the subjects/ population of interest.
+To tackle the missing data problem, one of the tool is matrix completion. 
+
+\section{How}
+\subsection{Problem formulation and assumption}
+Suppose the data matrix $\mathbf M^*$ is of dimension $n_1\times n_2$ with rank $r$.
+Assume \[n_1\leq n_2.\]
+We start with the single value decomposition of $\bs M$ as follows
+\[
+\bs M = \bs U \bs \Sigma \bs V^\top,
+\]
+where $col(\bs U) \in \mathbb R^{n_1\times r}, col(\bs V) \in \mathbb R^{n_2\times r}$, and $\bs \Sigma$ is a diagonal matrix with entries singular values, denoted as $\sigma_1(\bs M), \ldots, \sigma_r(\bs M)$ in descending order.
+And we introduce \textit{condition number} of matrix $\bs M$ to be 
+\[
+\kappa := \sigma_1(\bs M)/\sigma_r(\bs M),
+\]
+and we define an index subset $\Omega \subset [n_1]\times [n_2]$ such that $(i,j)\in\Omega \iff \bs M_{ij}$ is observed.
+
+\noindent\textbf{Assumption 1} (Random sampling). 
+In this report, we assume each entry of $\bs M$ is observed independently with probability $0<p<1$. 
+This corresponds to \textit{missing at random} in statistics terminology.
+
+\noindent\textbf{Example} (Incoherence).
+Here we provide an example that satisfies random sampling but causes unfaithful recovery.
+Consider $\bs M$ being a zero matrix except for 1 entry. If $p = o(1)$, then with high probability, the single nonzero entry would be missing, and any recovery method would be in vain to recover the rank $1$ property.
+
+\noindent \textbf{$\mu$-incoherent}.
+Motivated by the previous example, we define the \textit{incoherence parameter} $\mu$ of $\bs M$ as follows
+\[
+\mu:= \max\left\{
+\frac{n_1\|\bs U\|_{2,\infty}^2}{r},
+ \frac{n_2\|\bs V\|_{2,\infty}^2}{r}
+ \right\}.
+\]
+
+Recall that 
+$\|\bs U\|_{2,\infty} = \max_i\|\bs U_{i,\cdot}\|_2$ is the largest $\ell_2$ norm among rows of $\bs U$.
+Also note by SVD, $\bs U$ and $\bs V$ are unitary matrices, and thus $\bs U\bs U^\top = \mathbf I_r$ leading to $\|\bs U\|_F = r$.
+\[
+\frac{r}{n_1} = \frac{1}{n_1}\|\bs U\|_F^2
+\leq 
+\|\bs U\|_{2,\infty}^2
+\leq\|\bs U\|^2 = 1\implies
+1\leq \mu\leq \max\{n_1, n_2\} /r = n_2/r.
+\]
+
+
+\noindent \textbf{Euclidean projection operator: $\mathcal P_\Omega: \mathbb R^{n_1\times n_2}\to \mathbb R^{n_1\times n_2}$}.
+It is now natural to define a projection from original space $\mathbb R^{n_1\times n_2}$ where $\bs M$ lies in a subspace of $\mathbb R^{n_1\times n_2}$ as follows:
+$$
+[\mathcal P_{\Omega} (\bs M)]_{ij} = 
+\begin{cases}
+\bs M_{ij}, &\mathrm{ if } (i,j)\in\Omega\\
+0, &\mathrm{ else.}
+\end{cases}
+$$
+And our goal is to recover $\bs M$ on the basis of $\mathcal P_\Omega (\bs M)$.
+
+
+\subsection{Algorithm}
+Under the assumption of random sampling, we consider the recovery of $\bs M$, $\bb M$, as the \textit{inverse probability weighted average} of observed data matrix
+\begin{align}
+    \bb{M}:= p^{-1} \mathcal P_\Omega (\bs {M}).
+\end{align}
+Since the observed data is in the random subspace $\mathcal P_\Omega (\bs {M})$, 
+$\bb M$ is in fact a random recovering due to the randomness of sampling over $\Omega$.
+This construction leads to
+$$\mathbb E_\Omega (\bb M) = \bs M.$$
+Correspondingly, 
+we compute SVD of $\bb M = \bb U \bb \Sigma \bb V^\top$,
+and 
+$\bb U, \bb V$ are employed as the estimates of 
+$\bs U, \bs V$, respectively.
+
+
+\section{Main results}
+
+\begin{lemma}[Useful bounds of matrix norms, Lemma 3.20 of \cite{Chen:2021}]
+\label{LEM1}
+Assume $\bs M \in \mathbb{R}^{n_1\times n_2}$ is $\mu$-coherent. Then the following relations holds
+\begin{align}
+    \|\bs M\|_{2,\infty} \leq \sqrt{\mu r/n_1}\|\bs M\|\\
+     \|\bs M^\top\|_{2,\infty} \leq \sqrt{\mu r/n_2}\|\bs M\|\\
+      \|\bs M\|_{\infty} \leq \mu r\sqrt{1/n_1n_2}\|\bs M\|.
+\end{align}
+\end{lemma}
+
+\begin{lemma}[Perturbation bound of $\bb M$, Lemma 3.21 of \cite{Chen:2021}]
+\label{LEM2}
+Suppose $n_2 p\geq C\mu r\log n_2$ for some constant $C>0$, then with probability at least $1-O(n_2^{-10})$, one has 
+\[
+\|\bb M -\bs M\| 
+\lesssim
+\sqrt{\frac{\mu r\log n_2}{n_1 p}} \|\bs M\|.
+\]
+\end{lemma}
+
+\begin{theorem}[Recovery of $\boldsymbol {U}, \boldsymbol {V}$, Theorem 3.22 of \cite{Chen:2021}]
+\label{THM1}
+Suppose $n_1 p\geq C \kappa^2 \mu r\log n_2$ for some constant $C>0$, then with probability at least $1-O(n_2^{-10})$, one has
+$$
+\max \left\{\operatorname{dist}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right), \operatorname{dist}\left(\boldsymbol{V}, \boldsymbol{V}^{\star}\right)\right\}  
+\lesssim
+ \kappa \sqrt{\frac{\mu r \log n_2}{n_1 p}}.
+$$
+\end{theorem}
+Note that when the sample size $pn_1 n_2 \gg \kappa^2 \mu r n_2 \log n_2$, the spectral estimate achieves consistent estimation $\max \left\{\operatorname{dist}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right), \operatorname{dist}\left(\boldsymbol{V}, \boldsymbol{V}^{\star}\right)\right\} = o_p(1)$.
+
+
+\begin{theorem}[Recovery of $\boldsymbol M$, Theorem 3.23 of \cite{Chen:2021}]
+\label{THM2}
+Suppose $n_2 p\geq C\mu r\log n_2$ for some constant $C>0$, then with probability at least $1-O(n_2^{-10})$, one has 
+\[
+\|\bb U\bb \Sigma \bb V^{\top}\|_F 
+\lesssim
+\sqrt{\frac{\mu r^2\log n_2}{n_1 p }} \|\bs M\|
+\]
+\end{theorem}
+The theorem above only requires Lemma \ref{LEM2} and characterizes the statistical accuracy of $\bb U\bb \Sigma \bb V^\top$.
+
+\section{Proofs of theorems}
+\begin{proof}[Proof of Theorem \ref{THM1}]
+Sketch of the proof: 
+(i) Prove $\bb E = \bb M - \bs M$ satisfy $\|\bb E\| < \sigma_r(\bs M) - \sigma_{r+1}(\bs M)$, where $\sigma_r(\bs M)$ is the r-th largest singular value of $\bs M$. (ii) Apply Wedin's theorem to $\bb E$ and use lemma \ref{LEM2}.
+
+Step (i): recall $n_1 \geq n_2$, thus the condition of lemma \ref{LEM2} is satisfied. Then 
+\begin{align*}
+    \|\bb E\| = \|\bb M  - \bs M\| 
+    \lesssim \sqrt{\frac{\mu r \log n_2}{n_1 p }} \|\bs M\|.
+\end{align*}
+In addition, recall that $\sigma_1(\bs M) = \|\bs M\| = \kappa \sigma_r(\bs M)$ by definition of singular value and $\kappa$.
+Therefore 
+\begin{align*}
+    \|\bb E\| 
+    \lesssim & \sqrt{\frac{\mu r \log n_2}{n_1 p }} \|\bs M\|
+    = \sqrt{\frac{ \kappa^2 \mu r \log n_2}{n_1 p }} \sigma_r(\bs M) \\
+    \leq & \frac{1}{C} \sigma_r(\bs M) \text{ for some large enough $C>0$}.
+\end{align*}
+Choose $C$ such that $1/C < 1-1/\sqrt{2}$, we have 
+\begin{align*}
+    \|\bb E\| 
+    \lesssim 
+    (1-\frac{1}{\sqrt{2}}) \sigma_r(\bs M).
+\end{align*}
+Note we can always choose a large enough $C$ such that the condition of Wedin's theorem $\|\bb E\| < \sigma_r(\bs M) - \sigma_{r+1}(\bs M) $ holds.
+
+Step (ii): Apply Wedin's theorem to $\bb E$, we have 
+\begin{align*}
+\max \left\{\operatorname{dist}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right), \operatorname{dist}\left(\boldsymbol{V}, \boldsymbol{V}^{\star}\right)\right\}
+& \leq \frac{\sqrt{2} \max \left\{\left\|\boldsymbol{E}^{\top} \boldsymbol{U}^{\star}\right\|,\left\|\boldsymbol{E} \boldsymbol{V}^{\star}\right\|\right\}}{\sigma_r(\bs M)-\sigma_{r+1}(\bs M)-\|\boldsymbol{E}\|} \\
+&  \leq \frac{\sqrt{2} \|\bb E\| \max \left\{\left\|\boldsymbol{U}^{\star}\right\|,\left\|\boldsymbol{V}^{\star}\right\|\right\}}{\sigma_r(\bs M)-\|\boldsymbol{E}\|} \text{ by Lemma \ref{LEM1}}\\
+& \leq \frac{\sqrt{2} \|\bb E\|}{\sigma_r^{\star}-(1-\frac{1}{\sqrt{2}}\sigma_r(\bs M))} \text{ by unitary matrix $\bs U, \bs V$.}\\
+& = 2 \|\bb E\| / \sigma_r(\bs M) 
+= 2\kappa \|\bb E\| /\sigma_1(\bs M)\\
+& \lesssim \kappa \sqrt{\frac{\mu r\log n_2}{n_1 p}} \text{ by Lemma \ref{LEM2}}.
+\end{align*}
+\end{proof}
+
+
+\begin{proof}[Proof of Theorem \ref{THM2}]
+By triangle inequality, we have
+\[
+\|\bb U\bb \Sigma \bb V^\top - \bs M\|
+\leq
+\|\bb U\bb \Sigma \bb V^\top - \bb M\| +\|\bb M - \bs M\|.
+\]
+Note that $\bb U\bb \Sigma \bb V^\top$ is the SVD of $\bb M$ and thus the best rank-$r$ approximation to $\bb M$. 
+Therefore $\|\bb U\bb \Sigma \bb V^\top - \bb M\| \leq \|\bb M - \bs M\|$, where $\bs M$ is an unknown rank-$r$ matrix.
+
+In addition, since both $\bb U\bb \Sigma \bb V^\top $ and $\bs M$ are of rank $r$, the difference between them would have rank at most $2r$. This leads to 
+\begin{align*}
+    &~~~~  \|\bb U\bb \Sigma \bb V^\top - \bb M\| +\|\bb M - \bs M\|_F\\
+     & \leq \sqrt{2r} \|\bb U\bb \Sigma \bb V^\top - \bb M\| +\|\bb M - \bs M\| \text{ by Lemma \ref{LEM1}}\\
+     & \leq 2\sqrt{2r} \|\bb M - \bs M\|\\
+     & \lesssim \sqrt{\frac{\mu r^2 \log n_2}{n_1 p }} \|\bs M\| \text{ by Lemma \ref{LEM2}}.
+\end{align*}
+\end{proof}
+
+
+\section{Proofs of auxiliary lemmas}
+
+We start with the lemma for basic inequalities of matrix norms.
+
+\begin{lemma}[Inequalities for matrix norms]
+\label{LEM3}
+\begin{align*}
+(i): \|\bb A\bb B\|_{2,\infty} \leq \|\bb A\|_{2,\infty} \|\bb B\|, \quad 
+(ii): \|\bb A\bb B\| \leq \|\bb A\|\|\bb B\|,\quad
+(iii): \|\bb A\bb B^\top \|_{\infty} & \leq \|\bb A\|_{2,\infty} \|\bb B\|.
+\end{align*}
+\end{lemma}
+\begin{proof}[Proof of Lemma \ref{LEM3}]
+Consider $a_i = \bb e_i^\top\bb A $ be the $i$-th row of $\bb A$, $b_i = e_i^\top \bb B$ be the $i$-th row of $\bb B$, $b_{(j)}  = \bb B e_j$ be the $j$-th column of $\bb B$.
+
+(i) $\|\bb A\bb B\|_{2,\infty}  =  \max_{i} \|a_i \bb B\|_2 
+\leq  \max_{\|x\| = 1}\max_{i} \|a_i \bb B x\|_2 
+\leq  \max_{i}  \|a_{i}\|_2 \max_{\|x\| = 1} \|\bb Bx\|_2
+\leq \|\bb A\|_{2,\infty} \|\bb B\|$.
+
+(ii) Consider SVD of $\bb A$, we have for any $\|x\| =1$, 
+$\|\bb A\bb B x\|_2 = \|\bb U\bb\Sigma\bb V^\top \bb B x\|_2 \leq \|\bb\Sigma_1\|_2 \|\bb B x\|_2 \leq \|\bb A\|\|\bb B\|$.
+
+(iii) $|[\bb A\bb B^\top]_{ij}| =|a_i^\top b_j| = |\sum_{t} a_{it} b_{jt}| \leq \|a_i\|_2^2 \|b_j\|_2^2$ by Cauchy-Schwartz inequality. 
+This leads to $\|\bb A\bb B\|_{\infty} \leq \|\bb A\|_{2,\infty}\|\bb B\|_{2,\infty}$.
+In addition, since $\|\bb B\|_{2,\infty} \leq \|\bb B\|$, we proved the third inquality. 
+\end{proof}
+
+
+\begin{proof}[Proof of Lemma \ref{LEM1}]
+First of all, we consider 
+\begin{align*}
+\|\bs M\|_{2, \infty} 
+& = 
+\|\bs U\bs \Sigma \bs V^\top\|_{2,\infty} \\
+& \leq \|\bs U\|_{2, \infty} \|\bs\Sigma\| \|\bs V\| \text{ by Lemma \ref{LEM3} (i)\& (ii)} \\
+& \leq \frac{\sqrt{\mu r}}{\sqrt{n_1}}  \|\bs M\|  \text{ by definition of coherence parameter} \mu \geq {n_1 \|\bs U\|_{2,\infty}^2}/{r},
+\end{align*}
+
+
+Secondly, 
+\begin{align*}
+\|\bs M\|_{\infty} 
+& = 
+\|\bs U\bs \Sigma \bs V^\top\|_{\infty} \\
+& \leq \|\bs U\|_{2, \infty} \|\bs\Sigma\| \|\bs V\|_{2,\infty} \text{ by Lemma \ref{LEM3} (i)\& (iii)}\\
+& \leq \frac{\sqrt{\mu r}}{\sqrt{n_1}}  \|\bs M\| \frac{\sqrt{\mu r}}{\sqrt{n_2}}
+ = \frac{{\mu r}}{\sqrt{n_1 n_2}}  \|\bs M\| .
+\end{align*}
+\end{proof}
+
+
+
+
+\begin{proof}[Proof of Lemma \ref{LEM2}]
+Sketch of proof: (i) Decompose elements of $\bb E$ as sum of independent random matrices $\bb X_{ij}$. (ii) Apply matrix Bernstein inequality to $\bb E$.
+
+Step (i): 
+Recall that $\bb E = p^{-1} \mathcal P_\Omega (\bs M) - \bs M$, and can be written as follows
+\begin{align*}
+&  p^{-1} \mathcal P_\Omega (\bs M) - \bs M 
+= \sum_{i = 1}^{n_1}\sum_{j = 1}^{n_2}  \bb X_{ij}\\
+& \bb X_{ij} = (p^{-1}\delta_{ij}-1) M_{ij}^* \bb e_i \bb e_j^\top ,
+\end{align*}
+where $\delta_{ij} \sim Ber(p)$ is indicator random variable for that $(i,j)$-th entry is observed; 
+$\bb e_i$ is the $i$-th standard basis vector of appropriate dimension.
+It cann be seen that 
+\[
+\mathbb E(\bb X_{ij}) = \bb 0, \quad
+\|\bb X_{ij}\| \leq \frac{1}{p}\|\bs M\|_\infty  \leq 
+\frac{\mu r}{p\sqrt{n_1 n_2}}\|\bs M\|,
+\]
+by Lemma \ref{LEM1}. 
+
+Step (ii): 
+Apply matrix Bernstein inequality (Theorem \ref{THM3}), we have \[
+\bb E\leq \sqrt{2av\log n_2} + \frac{2a}{3} \frac{\mu r}{p\sqrt{n_1 n_2}}\|\bs M\| \log n_2, \quad \forall a>2,
+\]
+where 
+\begin{align*}
+v = 
+\max \left\{ \left\|\sum_{ij} \mathbb{E}\left[\left(\bb X_{ij}\right)\left(\bb X_{ij}\right)^{\top}\right] \right\|,
+\left\|\sum_{ij} \mathbb{E}\left[\left(\bb X_{ij}\right)^{\top}\left(\bb X_{ij}\right)\right]\right\|\right\}.
+\end{align*}
+For the first term in $v$,  we have
+\begin{align*}
+\sum_{ij}\mathbb E(\bb X_{ij} \bb X_{ij}^\top) 
+& = \sum_{ij} \mathbb E \left\{ (p^{-1} \delta_{ij})^2 (M_{ij}^*)^2 \bb e_i \bb e_j ^\top \bb e_j \bb e_i^\top \right\}\\
+& = \frac{1-p}{p}\sum_{ij} (M_{ij}^*)^2 \bb e_i \bb e_i^\top\\
+& = \frac{1-p}{p}\sum_{i=1}^{n_1} \|\bs M_{i,\cdot}\|_2^2 \bb e_i \bb e_i^\top\\
+&\preceq \frac{1-p}{p} \|\bs M\|_{2,\infty}^2 \sum_{i=1}^{n_1}\bb e_i \bb e_i^\top \\
+& \preceq \frac{\mu r}{ n_1 p }\|\bs M\|^2 \bb I_{n_1} \text{ by Lemma \ref{LEM1}}
+\end{align*}
+where $\bb A\preceq\bb B \iff \bb B - \bb A$ is positive semidefinite.  
+Similarly, we can derive 
+\begin{align*}
+\sum_{ij}\mathbb E(\bb X_{ij}^\top \bb X_{ij})  \preceq \frac{\mu r}{ n_1 p }\|\bs M\|^2 \bb I_{n_2}
+\end{align*}
+Thus, we can bound $v$ as follows
+$$
+v\leq \frac{\mu r}{n_1 p} \|\bs M\|^2
+$$
+by noting that $n_1\leq n_2$.
+Combine the bound of $v$ and the result of Bernstein inequality, we have 
+$$
+\bb E\lesssim \sqrt{\frac{\mu r \|\bs M\|^2\log n_2 }{n_1 p}} + \frac{\mu r \|\bs M\| \log n_2}{ p\sqrt{n_1 n_2}}
+$$
+with probability at least $1-O(n_2^{-10})$ by setting $a = 11$.
+Since $\log n_2 \ll \sqrt{n_2}$, the second term above diminishes as $n_2$ becomes large. 
+In particular, when $n_2 \leq \mu r \|\bs M\|^2 \log n_2$, the first term dominates the second term, which leads to 
+$$
+\bb E\lesssim \sqrt{\frac{\mu r \|\bs M\|^2\log n_2}{n_1 p}}.
+$$
+\end{proof}
+
+
+
+\section{Miscellaneous}
+\subsection{Norms}
+For any vector $\boldsymbol{v}$, we denote by $\|\boldsymbol{v}\|_2,\|\boldsymbol{v}\|_1$ and $\|\boldsymbol{v}\|_{\infty}$ its $\ell_2$ norm, $\ell_1$ norm and $\ell_{\infty}$ norm, respectively. For any matrix $\boldsymbol{A}=\left[A_{i, j}\right]_{1 \leq i \leq m, 1 \leq j \leq n}$, we let $\|\boldsymbol{A}\|,\|\boldsymbol{A}\|_*$, $\|\boldsymbol{A}\|_{\mathrm{F}}$ and $\|\boldsymbol{A}\|_{\infty}$ represent respectively its spectral norm (i.e., the largest singular value of $\boldsymbol{A}$ ), its nuclear norm (i.e., the sum of singular values of $\boldsymbol{A}$ ), its Frobenius norm (i.e., $\|\boldsymbol{A}\|_{\mathrm{F}}:=\sqrt{\sum_{i, j} A_{i, j}^2}$ ), and its entrywise $\ell_{\infty}$ norm (i.e., $\left.\|\boldsymbol{A}\|_{\infty}:=\max _{i, j}\left|A_{i, j}\right|\right)$. We also refer to $\|\boldsymbol{A}\|_{2, \infty}$ as the $\ell_{2, \infty}$ norm of $\boldsymbol{A}$, defined as $\|\boldsymbol{A}\|_{2, \infty}:=\max _i\left\|\boldsymbol{A}_{i, \cdot}\right\|_2$. Similarly, we define the $\ell_{\infty, 2}$ norm of $\boldsymbol{A}$ as $\|\boldsymbol{A}\|_{\infty, 2}:=\left\|\boldsymbol{A}^{\top}\right\|_{2, \infty}$. In addition, for any matrices $\boldsymbol{A}=\left[A_{i, j}\right]_{1 \leq i \leq m, 1 \leq j \leq n}$ and $\boldsymbol{B}=\left[B_{i, j}\right]_{1 \leq i \leq m, 1 \leq j \leq n}$, the inner product of $\boldsymbol{A}$ and $\boldsymbol{B}$ is defined as and denoted by $\langle\boldsymbol{A}, \boldsymbol{B}\rangle=\sum_{1 \leq i \leq m, 1 \leq j \leq n} A_{i, j} B_{i, j}=\operatorname{Tr}\left(\boldsymbol{A}^{\top} \boldsymbol{B}\right)$.
+
+
+\subsection{Matrix Bernstein and Wedin Theorem}
+Consider $\bb M = \bs M + \bb E$ and $\bs M$ be two matrices of $\mathbb R^{n_1\times n_2}$, $n_1\leq n_2$.
+Let $\bs M = \bs U \bs \Sigma \bs V$, $\bb M = \bb U \bb \Sigma \bb V$ as follows
+
+$$
+\begin{gathered}
+\bs M=\sum_{i=1}^{n_1} \sigma_i^{\star} u_i^{\star} \boldsymbol{v}_i^{\star \top}=\left[\begin{array}{ll}
+\bs U & \bs U_{\perp}
+\end{array}\right]\left[\begin{array}{ccc}
+\bs \Sigma & 0 & 0 \\
+0 & \bs \Sigma_{\perp}& 0
+\end{array}\right]\left[\begin{array}{c}
+\boldsymbol{V}^{\star \top} \\
+\boldsymbol{V}_{\perp}^{\star \top}
+\end{array}\right] ; \\
+\bb M=\sum_{i=1}^{n_1} \sigma_i \boldsymbol{u}_i \boldsymbol{v}_i^{\top}=\left[\begin{array}{ll} \bb U & \bb U_{\perp}
+\end{array}\right]\left[\begin{array}{ccc}
+\bb \Sigma & 0 & 0 \\
+0 & \boldsymbol{\Sigma}_{\perp} & 0
+\end{array}\right]\left[\begin{array}{c}
+\boldsymbol{V}^{\top} \\
+\boldsymbol{V}_{\perp}^{\top}
+\end{array}\right] .
+\end{gathered}
+$$
+Here, $\sigma_1 \geq \cdots \geq \sigma_{n_1}$ (resp. $\sigma_1^{\star} \geq \cdots \geq \sigma_{n_1}^{\star}$ ) stand for the singular values of $M$ (resp. $\left.M^{\star}\right)$ arranged in descending order, $\boldsymbol{u}_i$ (resp. $\left.\boldsymbol{u}_i^{\star}\right)$ denotes the left singular vector associated with the singular value $\sigma_i\left(\right.$ resp. $\left.\sigma_i^{\star}\right)$, and $\boldsymbol{v}_i$ (resp. $\left.\boldsymbol{v}_i^{\star}\right)$ represents the right singular vector associated with $\sigma_i\left(\right.$ resp. $\left.\sigma_i^{\star}\right)$. In addition, we denote
+$$
+\begin{aligned}
+\boldsymbol{\Sigma} &:=\operatorname{diag}\left(\left[\sigma_1, \cdots, \sigma_r\right]\right), & \boldsymbol{\Sigma}_{\perp} &:=\operatorname{diag}\left(\left[\sigma_{r+1}, \cdots, \sigma_{n_1}\right]\right), \\
+\boldsymbol{U} &:=\left[\boldsymbol{u}_1, \cdots, \boldsymbol{u}_r\right] \in \mathbb{R}^{n_1 \times r}, & \boldsymbol{U}_{\perp} &:=\left[\boldsymbol{u}_{r+1}, \cdots, \boldsymbol{u}_{n_1}\right] \in \mathbb{R}^{n_1 \times\left(n_1-r\right)}, \\
+\boldsymbol{V} &:=\left[\boldsymbol{v}_1, \cdots, \boldsymbol{v}_r\right] \in \mathbb{R}^{n_2 \times r}, & \boldsymbol{V}_{\perp} &:=\left[\boldsymbol{v}_{r+1}, \cdots, \boldsymbol{v}_{n_2}\right] \in \mathbb{R}^{n_2 \times\left(n_2-r\right)}
+\end{aligned}
+$$
+The matrices $\boldsymbol{\Sigma}^{\star}, \boldsymbol{\Sigma}_{\perp}^{\star}, \boldsymbol{U}^{\star}, \boldsymbol{U}_{\perp}^{\star}, \boldsymbol{V}^{\star}, \boldsymbol{V}_{\perp}^{\star}$ are defined analogously.
+
+In addition, we define the distance between two matrices as 
+\begin{equation}
+\begin{aligned}
+\operatorname{dist}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right) &:=\min _{\boldsymbol{R} \in \mathcal{O}^{r \times r}}\left\|\boldsymbol{U} \boldsymbol{R}-\boldsymbol{U}^{\star}\right\| 
+% \operatorname{dist}_{\mathrm{F}}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right) &:=\min _{\boldsymbol{R} \in \mathcal{O}^{r \times r}}\left\|\boldsymbol{U} \boldsymbol{R}-\boldsymbol{U}^{\star}\right\|_{\mathrm{F}}
+\end{aligned}
+\end{equation}
+
+% \begin{theorem}[Davis-Kahan $\sin \Theta$ theorem for eigenspace perturbation]
+
+% \end{theorem}
+
+
+\begin{theorem}[Matrix Bernstein, Corollary 3.3 of \cite{Chen:2021}]
+\label{THM3}
+Let $\left\{\boldsymbol{X}_i\right\}_{1 \leq i \leq m}$ be a set of independent real random matrices with dimension $n_1 \times n_2$. Suppose that
+$$
+\mathbb{E}\left[\boldsymbol{X}_i\right]=\mathbf{0}, \quad \text { and } \quad\left\|\boldsymbol{X}_i\right\| \leq L, \quad \text { for all } i .
+$$
+Set $n:=\max \left\{n_1, n_2\right\}$, and variance statistic \begin{equation}
+\begin{aligned}
+v:=\max &\left\{ \left\|\sum_{i=1}^m \mathbb{E}\left[\left(\boldsymbol{X}_i-\mathbb{E}\left[\boldsymbol{X}_i\right]\right)\left(\boldsymbol{X}_i-\mathbb{E}\left[\boldsymbol{X}_i\right]\right)^{\top}\right] \right\|,\right.\\
+&\left.\left\|\sum_{i=1}^m \mathbb{E}\left[\left(\boldsymbol{X}_i-\mathbb{E}\left[\boldsymbol{X}_i\right]\right)^{\top}\left(\boldsymbol{X}_i-\mathbb{E}\left[\boldsymbol{X}_i\right]\right)\right]\right\|\right\}.
+\end{aligned}
+\end{equation}
+For any $a \geq 2$, with probability exceeding $1-2 n^{-a+1}$ one has
+$$
+\left\|\sum_{i=1}^m \boldsymbol{X}_i\right\| \leq \sqrt{2 a v \log n}+\frac{2 a}{3} L \log n .
+$$
+\end{theorem}
+
+\begin{theorem}[Wedin  $\sin \Theta$ theorem for singular subspace perturbation, Theorem 3.22 of \cite{Chen:2021}]
+If $\|\boldsymbol{E}\|<\sigma_r^{\star}-\sigma_{r+1}^{\star}$, then one has
+$$
+\begin{aligned}
+\max \left\{\operatorname{dist}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right), \operatorname{dist}\left(\boldsymbol{V}, \boldsymbol{V}^{\star}\right)\right\} & \leq \frac{\sqrt{2} \max \left\{\left\|\boldsymbol{E}^{\top} \boldsymbol{U}^{\star}\right\|,\left\|\boldsymbol{E} \boldsymbol{V}^{\star}\right\|\right\}}{\sigma_r^{\star}-\sigma_{r+1}^{\star}-\|\boldsymbol{E}\|}.
+% \max \left\{\operatorname{dist}_{\mathrm{F}}\left(\boldsymbol{U}, \boldsymbol{U}^{\star}\right), \operatorname{dist}_{\mathrm{F}}\left(\boldsymbol{V}, \boldsymbol{V}^{\star}\right)\right\} & \leq \frac{\sqrt{2} \max \left\{\left\|\boldsymbol{E}^{\top} \boldsymbol{U}^{\star}\right\|_{\mathrm{F}},\left\|\boldsymbol{E} \boldsymbol{V}^{\star}\right\|_{\mathrm{F}}\right\}}{\sigma_r^{\star}-\sigma_{r+1}^{\star}-\|\boldsymbol{E}\|} .
+\end{aligned}
+$$
+\end{theorem}
+
+\begin{proof}
+This proof relies on Lemma 2.5 and Lemma 2.6, which gives
+\begin{equation}
+\left\|\boldsymbol{U} \boldsymbol{U}^{\top}-\boldsymbol{U}^{\star} \boldsymbol{U}^{\star \top}\right\|
+% =\|\sin \Theta\|
+=\left\|\boldsymbol{U}_{\perp}^{\top} \bs U\right\|
+% =\left\|\boldsymbol{U}^{\top} \bs U_{\perp}\right\|
+ \leq \min _{\bb R \in \mathcal{O}^{r \times r} }\left\|\boldsymbol{U} \bb R-\boldsymbol{U}^{\star}\right\| .
+%  \leq \sqrt{2}\left\|\boldsymbol{U} \boldsymbol{U}^{\top}-\boldsymbol{U}^{\star} \boldsymbol{U}^{\star \top}\right\|
+\end{equation}
+Then we only need to show
+\[
+\max \left\{
+\|\boldsymbol{U}_{\perp}^{\top} \bs U\|
+, \|\boldsymbol{V}_{\perp}^{\top} \bs V\|
+\right\} 
+\leq \frac{\sqrt{2} \max \left\{\left\|\boldsymbol{E}^{\top} \boldsymbol{U}^{\star}\right\|,\left\|\boldsymbol{E} \boldsymbol{V}^{\star}\right\|\right\}}{\sigma_r^{\star}-\sigma_{r+1}^{\star}-\|\boldsymbol{E}\|}
+\]
+\end{proof}
+
+
+
+
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{references} 
+
+\end{document} 

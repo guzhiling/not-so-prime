@@ -4,12 +4,14 @@ title: miscellaneous
 ---
 
 # Webinars
-
+- [International Seminar on Selective Inference](https://www.selectiveinferenceseminar.com)
 - [Math Webinars](https://mathseminars.org/)
 - [Webinar Series: Data Science In Action In Response To The Outbreak of COVID-19](https://statds.org/events/webinar_dsa2020/schedule.html)
 
-# Blogs
 
+
+# Blogs
+- [Aaditya Ramdas](https://www.stat.cmu.edu/~aramdas/index.html)
 - [Sebastian Ruder](https://ruder.io/10-tips-for-research-and-a-phd/)
 - [Declaration of VAR and some other stuff](https://retifrav.github.io/)
 - [WeiYa's Work Yard](https://stats.hohoweiya.xyz/)
@@ -18,7 +20,8 @@ title: miscellaneous
 - [Fight with Infinity](https://zx31415.wordpress.com)
 - [totallydiconnected](https://totallydisconnected.wordpress.com)
 
-# Online Courses
+# Online Courses/ Notes
+- [Theory of Statistics, Emmanuel Candes](https://candes.su.domains/teaching/stats300c/lectures.html)
 
 - [Linear Algebra (MIT 18.06)](https://www.google.com/url?q=https%3A%2F%2Focw.mit.edu%2Fcourses%2Fmathematics%2F18-06-linear-algebra-spring-2010%2F&sa=D) by Gilbert Strang.
 Gilbert Strang is a professor of Mathematics from MIT. His clear and explicit lectures unveil the elegance of linear algebra. He is always my inspiration.
