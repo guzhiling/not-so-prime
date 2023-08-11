@@ -1,6 +1,6 @@
 ---
 layout: default
-title: **2 + 2 = 4** 
+title: **2 + 2 = 4 = 2^2** 
 ---
 
 
@@ -18,3 +18,6 @@ title: **2 + 2 = 4**
 ## 4
 - [Projective Spaces](/blogs/ProjectiveSpace.pdf)
 - [Matrix Completion](/blogs/MatrixCompletion_20221122/main.pdf) & [Slides](/blogs/MatrixCompletion_20221122/slides.pdf)
+
+## 6
+- [Parameterizing and Simulating from Causal Models](https://github.com/calebleedy/ISU-Causal/blob/main/Presentations/ZG_053123.pdf) & [More from ISU Causal Inference Working Group](https://github.com/calebleedy/ISU-Causal/tree/main)
