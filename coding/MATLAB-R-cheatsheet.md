@@ -18,6 +18,6 @@ Title: A brief atlas between MATLAB and R
 |Logic (0/1) vector indicating elements in a vector is larger than 1| `logic = (x>1)`| `logic = (x>1)`|
 |Index of elements that satisfies a condition| `ind = find(x>1)`| `ind = which(x>1)`|
 |Retrieve elements that satisfies a condition| `x(x>1); x(find(x>1))` | `x[x>1]; x[which(x>1)]`|
-|Solve $x$ from $Ax = B$|  `x =  Solve(A, B)` | `x = A\B`|
-|Identity matrix of dimension $n$| `diag(n)`| `eye(n)` / `eye(n,n)`|
-|Eigen value and eigen vectors of matrix $x$| `ev = eigen(x); ev$values; ev$vectors`| `[vectors, values] = eigs(x)`|
+|Solve $x$ from $Ax = B$|   `x = A\B`|`x =  Solve(A, B)` |
+|Identity matrix of dimension $n$|  `eye(n)` / `eye(n,n)`|`diag(n)`|
+|Eigen value and eigen vectors of matrix $x$| `[vectors, values] = eigs(x)`| `ev = eigen(x); ev$values; ev$vectors`|
