@@ -1,6 +1,5 @@
 ---
-date: "2020-06-11"
-title: miscellaneous
+title: Links
 ---
 
 # Webinars
@@ -40,13 +39,16 @@ Brady Haran is a video jounalist, who invites stars of the field to explain topi
 
 - [NASA Science Missions](https://science.nasa.gov/science-missions/)
 
-<!---
+
 # Talks
 
+- ['SPACE Webinar Series: Signal Processing And Computational image formation'](https://www.youtube.com/watch?v=lMjHRRwcsFc) by Prof. Rebecca Willett
+
+<!---- 
 - ['Statistical paradises and paradoxes in Big Data'](https://www.youtube.com/watch?v=8YLdIDOMEZs) by Xiao-Li MENG.
-Xiao-Li Meng is a professor at Department of Statistics at Harvard University. In this talk, he raised several key questions to us, especially those who are fascinated by the 'Big Data': 1) quality V.S. quantity of data, 2) absolute V.S. relative size of data, 3) probabilistic sampling V.S. random sampling, 4).
+Xiao-Li Meng is a professor at Department of Statistics at Harvard University. In this talk, he raised several key questions to us, especially those who are fascinated by the 'Big Data': 1) quality V.S. quantity of data, 2) absolute V.S. relative size of data, 3) probabilistic sampling V.S. random sampling.
 
 - ['How we teach computers to understand pictures'](https://www.youtube.com/watch?v=40riCqvRoMs) by Fei-Fei LI.
 Fei Fei LI is a professor at the Computer Science Department at Stanford University. In this ted talk she discusses how to "teach" a computer to understand pictures.
 "To get from age 0 to 3 was hard, the real chanllenge is to go from 3 to 13 and far beyond." "First we teach the computers to see, then they help us to see better."
---->
+---!>
