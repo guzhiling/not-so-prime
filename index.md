@@ -12,6 +12,7 @@
 - [Learning Sources](/blogs/learning_source.md)
 - [My Watchlist of 2020](/blogs/watchlist2020.md)
 - [National Mourn](/blogs/2020-04-04-nationalmorn.md)
+- [2023 in Review](/blogs/2023-in-Review.md)
 
 ## 4 Notes
 - [Projective Spaces](/blogs/ProjectiveSpace.pdf)
