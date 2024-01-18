@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Submit this script with: sbatch thefilename
+
+#SBATCH --mem-per-cpu=8G
+#SBATCH --time=24:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --job-name=arg14-arg22
+#SBATCH --output=outfiles/arg14-arg22.out
+#SBATCH --mail-user=XXXXX@gmail.com
+#SBATCH --mail-type=BEGIN
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
+
+# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+
+module load r
+srun Rscript ./main.R 4 2
+
