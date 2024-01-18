@@ -6,6 +6,7 @@
 - [R:dplyr](coding/2020-04-14-dplyr.md)
 - [Basic Shell/terminal commands](/coding/TerminalCommands.md)
 - [Matlab Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/matlab_parallel)
+- [R Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/r_parallel)
 
 ## 1 Life
 - [Recipes](/blogs/Recipes.md)
