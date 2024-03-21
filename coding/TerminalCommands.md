@@ -42,7 +42,7 @@ Author: Ling
 [Use Julia GPU docker containers with singularity](https://researchit.las.iastate.edu/use-julia-gpu-docker-containers-singularity)
 
 ```
-srun --nodes 1 --ntasks 1 --cpus-per-task 2 --gres gpu:1 --pty bash
+srun --time=01:00:00 --cpus-per-task=1 --partition=interactive --pty /usr/bin/bash
 ```
 
 
