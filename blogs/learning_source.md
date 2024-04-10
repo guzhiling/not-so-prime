@@ -10,6 +10,7 @@ title: Links
 
 
 # Blogs
+- [Yi Tay](https://www.yitay.net)
 - [Aaditya Ramdas](https://www.stat.cmu.edu/~aramdas/index.html)
 - [Sebastian Ruder](https://ruder.io/10-tips-for-research-and-a-phd/)
 - [Declaration of VAR and some other stuff](https://retifrav.github.io/)
@@ -31,7 +32,7 @@ A small trick! Audit the whole course, and then enroll the course to upload the 
 
 - [1Blue3Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) by Grant Sanderson.
 Grant Sanderson is a mathematics PhD graduated from Stanford University. In the videos, he concisely explains math in a most intuitive way with the help of animations.
-
+  - [Attention in transformers](https://youtu.be/eMlx5fFNoYc?si=tBxhIXCQHGMZnwcm)
 
 - [Numberphile](https://www.google.com/url?q=https%3A%2F%2Fwww.numberphile.com%2Fabout&sa=D) by Brady Haran.
 Brady Haran is a video jounalist, who invites stars of the field to explain topics or questions from sublime to ridiculous. 
