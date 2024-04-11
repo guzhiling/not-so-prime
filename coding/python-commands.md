@@ -7,9 +7,9 @@
 ## Environment management in conda
 - create a blank conda environment: `conda create --name myenv python=3.9.16`
 - create a conda environment from yml file: `conda create myenv —-file myenv.yml`
-- update the current environment using yml file: `conda env update --name myenv --file s1xs1_env_copy.yml --prune`
+- update the current environment using yml file: `conda env update --name myenv --file myenv.yml --prune`
 - list all conda environments on the machine: `conda env list`
-- copy an exisiting environment env 1, name it as env2: `conda create --clone env1 --name env2`
+- copy an exisiting environment myenv 1, name it as myenv2: `conda create --clone myenv1 --name myenv2`
 - display active conda channels: `conda config --show channels`
 - update conda: `conda update --all`
 - activate a conda environemnt: `conda activate myenv`
