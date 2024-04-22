@@ -9,7 +9,7 @@
 - [R Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/r_parallel)
 - [Python Commands](coding/python-commands.md)
 - [Links](coding/Links.md)
-- 
+
 ## 1 Life
 - [Recipes](/blogs/Recipes.md)
 - [My Watchlist of 2020](/blogs/watchlist2020.md)
