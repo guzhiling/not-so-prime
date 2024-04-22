@@ -8,10 +8,10 @@
 - [Matlab Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/matlab_parallel)
 - [R Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/r_parallel)
 - [Python Commands](coding/python-commands.md)
-
+- [Links](coding/Links.md)
+- 
 ## 1 Life
 - [Recipes](/blogs/Recipes.md)
-- [Learning Sources](/blogs/learning_source.md)
 - [My Watchlist of 2020](/blogs/watchlist2020.md)
 - [National Mourn](/blogs/2020-04-04-nationalmorn.md)
 - [2023 in Review](/blogs/2023-in-Review.md)
