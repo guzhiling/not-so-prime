@@ -3,7 +3,7 @@
 - R Package Writing: [litr](https://jacobbien.github.io/litr-project/)
 
 # Housekeeping
-- LaTeX bibfile management: https://yufeizhao.com/blog/2021/07/04/bibtex/
+- LaTeX bibfile management: (https://yufeizhao.com/blog/2021/07/04/bibtex/)
 
 
 # Webinars
