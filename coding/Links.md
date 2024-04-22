@@ -5,6 +5,8 @@
 # Housekeeping
 - LaTeX bibfile management: (https://yufeizhao.com/blog/2021/07/04/bibtex/)
 
+# Job search
+- [Statistics Jobs Forum, managed by University of Florida](https://forms.stat.ufl.edu/statistics-jobs/)
 
 # Webinars
 - [International Seminar on Selective Inference](https://www.selectiveinferenceseminar.com)
