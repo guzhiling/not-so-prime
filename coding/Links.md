@@ -1,3 +1,7 @@
+# Paper reading
+- arXiv paper discusion forum: [alphaxiv](https://www.alphaxiv.org)
+
+
 # Packages
 - Beautiful R Stan visualization: [bayesplot](http://mc-stan.org/bayesplot/)
 - R Package Writing: [litr](https://jacobbien.github.io/litr-project/)
