@@ -2,6 +2,7 @@
 
 
 ## 0 Coding
+- [Templates for making marginnotes](coding/Marginnote2.tex)
 - [Atlas: R -> MATLAB](coding/MATLAB-R-cheatsheet.md)
 - [R:dplyr](coding/2020-04-14-dplyr.md)
 - [Basic Shell/terminal commands](/coding/TerminalCommands.md)
