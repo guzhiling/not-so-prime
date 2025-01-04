@@ -1,0 +1,56 @@
+% Modified from https://www.reddit.com/r/LaTeX/comments/10k0kns/columns/?rdt=50479
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{microtype}   % improves text in narrow environments
+\usepackage{graphicx}
+\usepackage[aboveskip=3pt,belowskip=6pt]{caption}
+\usepackage{amsthm,mathtools}
+\usepackage{paracol}
+
+% Format for a header
+\newcommand\header[1]{\par\noindent\textbf{#1}}
+
+% Set a ratio of both columns and vertical spacing above each paracol
+\columnratio{0.7}
+
+% For dummy text
+\usepackage{lipsum} 
+
+
+
+\begin{document}
+\title{Example for multi-column text}
+\maketitle
+
+\section*{Section 1}
+\begin{paracol}{2}
+	\lipsum[1]
+	\switchcolumn
+	\begin{table}
+		\caption{Commentary Tables}
+		\begin{tabular}{c|cc}
+			AAA & BBB & CCC
+		\end{tabular}
+	\end{table}
+\end{paracol}
+
+\vspace{0.3in}
+\begin{paracol}{2}
+	\lipsum[3]
+	\switchcolumn
+	\header{Annotation 1}
+	\lipsum[4]
+\end{paracol}
+
+\section*{Section 2}
+\lipsum[3]
+
+\vspace{0.3in}
+
+\begin{paracol}{2}
+	\lipsum[3]
+	\switchcolumn
+	\header{Annotation 1}
+	\lipsum[4]
+\end{paracol}
+\end{document}
