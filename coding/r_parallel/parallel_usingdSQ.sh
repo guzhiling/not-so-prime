@@ -1,8 +1,7 @@
 # Reference: https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/dsq/
-
+# STEP 0: In terminal, run `module load dSQ`
 
 # STEP 1: create a list of sbatch scripts and save it in job_list.txt
-
 #!/bin/bash
 
 # Define output job list file
