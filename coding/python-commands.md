@@ -18,13 +18,17 @@
 
 
 ## Argument Parser
+
+In shell/terminal:
+```
+python main.py --arg1 2 --arg2 "arg2_alt"
+```
+
 In main.py:
 ```
 parser = argparse.ArgumentParser()
 parser.add_argument("--arg1", type=int, help="integer argument 1", default = 1)
 parser.add_argument("--arg2", type=str, help="string argument 2", default = "arg2_default")
-```
-In shell/terminal:
-```
-python main.py --arg1 2 --arg2 "arg2_alt"
+arg1 = parser.arg1
+arg2 = parser.arg2
 ```
