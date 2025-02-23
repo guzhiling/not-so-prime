@@ -30,6 +30,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--arg1", type=int, help="integer argument 1", default = 1)
 parser.add_argument("--arg2", type=str, help="string argument 2", default = "arg2_default")
-arg1 = parser.arg1
-arg2 = parser.arg2
+args = parser.parse_args()
+arg1 = args.arg1
+arg2 = args.arg2
 ```
