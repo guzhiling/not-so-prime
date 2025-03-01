@@ -3,6 +3,7 @@
 2. Set up python environment: `conda activate myenv`
 3. Coding using your favorate editor/ using jupyter notebook: `jupyter notebook`
 4. Run python code in terminal: `python code.py`
+5. In visual studio code: select compiler to be the environment name you need
 
 ## Environment management in conda
 - create a blank conda environment: `conda create --name myenv python=3.9.16`
@@ -15,7 +16,8 @@
 - activate a conda environemnt: `conda activate myenv`
 - check conda version: `conda --version`
 - check python version: `python --version`
-
+- export environment: `conda list --explicit > environment.txt`
+- create environemtn from explicit environment: `conda create --name new_env --file environment.txt`
 
 ## Argument Parser
 
