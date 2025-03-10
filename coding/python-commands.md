@@ -7,7 +7,7 @@
 
 ## Environment management in conda
 - create a blank conda environment: `conda create --name myenv python=3.9.16`
-- create a conda environment from yml file: `conda create myenv —-file myenv.yml`
+- create a conda environment from yml file: `conda create myenv —-file environment.yml` or `conda env create -f environment.yml`
 - update the current environment using yml file: `conda env update --name myenv --file myenv.yml --prune`
 - list all conda environments on the machine: `conda env list`
 - copy an exisiting environment myenv 1, name it as myenv2: `conda create --clone myenv1 --name myenv2`
@@ -17,7 +17,11 @@
 - check conda version: `conda --version`
 - check python version: `python --version`
 - export environment: `conda list --explicit > environment.txt`
-- create environemtn from explicit environment: `conda create --name new_env --file environment.txt`
+- create environment from explicit environment: `conda create --name new_env --file environment.txt`
+- update environment on ycrc server `ycrc_conda_env.sh update`
+
+
+
 
 ## Argument Parser
 
