@@ -2,12 +2,13 @@
 
 
 ## 0 Coding
-- Templates for making marginnotes: [Ex1](https://github.com/guzhiling/not-so-prime/blob/main/coding/Marginnote1.tex) and [Ex2](https://github.com/guzhiling/not-so-prime/blob/main/coding/Marginnote2.tex)
+- [Containers](coding/Containers.md) for running code under python environments 
+- Templates for making marginnotes: [Ex1](coding/Marginnote1.tex) and [Ex2](coding/Marginnote2.tex)
 - [Atlas: R -> MATLAB](coding/MATLAB-R-cheatsheet.md)
 - [R:dplyr](coding/2020-04-14-dplyr.md)
 - [Basic Shell/terminal commands](/coding/TerminalCommands.md)
-- [Matlab Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/matlab_parallel)
-- [R Parallel Computing on shell](https://github.com/guzhiling/not-so-prime/tree/main/coding/r_parallel)
+- [Matlab Parallel Computing on shell](coding/matlab_parallel)
+- [R Parallel Computing on shell](coding/r_parallel)
 - [Python Commands](coding/python-commands.md)
 - [Links](coding/Links.md)
 
