@@ -2,9 +2,9 @@ Containers are helpful in streamlining the environment for coding, espcially pyt
 
 Yale resource for [Apptainer (previousely singularity)](https://docs.ycrc.yale.edu/clusters-at-yale/guides/containers/) to execute codes under environments of apptainer or docker. 
 
-0. Check apptainer `apptainer --version`
+## 0. Check apptainer `apptainer --version`
 
-1. Directaly pull a container and use it `apptainer pull container_dir_on_docker`, e.g.
+## 1. Directaly pull a container and use it `apptainer pull container_dir_on_docker`, e.g.
 `apptainer pull docker://zhengwustat/concon_ax_env`
 
 
@@ -17,7 +17,7 @@ INFO:    Creating SIF file...
 ```
 
 
-2. Build docker image from Docker Hub (https://hub.docker.com/) by `apptainer build container_name container_dir_on_docker`:
+## 2. Build docker image from Docker Hub (https://hub.docker.com/) by `apptainer build container_name container_dir_on_docker`:
 
 ```
 apptainer build tensorflow-10.0-py3.sif docker://tensorflow/tensorflow:1.10.0-py3
@@ -33,13 +33,13 @@ apptainer build tensorflow-10.0-py3.sif docker://tensorflow/tensorflow:1.10.0-py
 | **Example**      | `apptainer pull ubuntu.sif docker://ubuntu:latest` | `apptainer build my_container.sif my_container.def` |
 
 
-3. Run code within the container
+## 3. Run code within the container
 ```
 apptainer exec --nv container_name.sif python main.py 
 ```
 
 
-4. Related shell scripts
+## 4. Related shell scripts
 
 Note that the option `--nv` is important to enable GPU 
 ```
@@ -47,7 +47,7 @@ apptainer exec --nv ../concon_ax_env_latest.sif python fitSC.py --device_num 1 -
 ```
 
 
-5. Select the free GPU in `main.py`
+## 5. Select the free GPU in `main.py`
 ```
 def get_free_gpu():
   free_memory = []
@@ -64,11 +64,11 @@ else:
   device = torch.device('cpu')
 ```
 
-6. Interactive Session with GPU
+## 6. Interactive Session with GPU
 `salloc --mem=32G --cpus-per-gpu=1 --gpus=1 --time=2:00:00 --partition gpu_devel`
 
 
-7. Planning the jobs for GPU on server
+## 7. Planning the jobs for GPU on server
 
 In order to shorten the wait time and plan the gpu jobs, the following are the advice by YCRC:
 
