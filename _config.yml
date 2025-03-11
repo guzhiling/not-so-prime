@@ -1,4 +1,4 @@
 title: Not So Prime
 description: 
-theme: jekyll-theme-minimal
-include: [_includes]
+show_downloads: true
+theme: jekyll-theme-merlot
