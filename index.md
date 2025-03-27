@@ -2,6 +2,7 @@
 
 
 ## 0 docs
+- Parallel using [dSQ](docs/parallel_usingdSQ.sh)
 - [Containers](docs/Containers.md) for running code under python environments 
 - Templates for making marginnotes: [Ex1](docs/Marginnote1.tex) and [Ex2](docs/Marginnote2.tex)
 - [Atlas: R -> MATLAB](docs/MATLAB-R-cheatsheet.md)
