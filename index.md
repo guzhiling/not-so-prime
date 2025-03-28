@@ -16,6 +16,7 @@
 - [Python Commands](docs/python-commands.md)
 
 ## 2 Theory Notes
+- New! [An introduction to Topological Data Analysis (TDA) and Topological Deep Learning(TDL)](docs/TDL_ZhilingGu_20250328.pdf)
 - [Parameterizing and Simulating from Causal Models](https://github.com/calebleedy/ISU-Causal/blob/main/Presentations/ZG_053123.pdf) & [More from ISU Causal Inference Working Group](https://github.com/calebleedy/ISU-Causal/tree/main)
 - [Adaptive bootstrap tests for composite null hypotheses](https://github.com/guzhiling/ISU-Causal/blob/main/Presentations/CIWG_20231128_MediationAnalysis_Zhiling.pdf)
 - [Projective Spaces](/docs/ProjectiveSpace.pdf)
