@@ -6,7 +6,7 @@
 
 ## 4 Coding Notes
 - Parallel using [dSQ](docs/parallel_usingdSQ.sh)
-- [Containers](docs/Containers.md) for running code under python environments 
+- [Containers](docs/Containers.md) for running code under python environments and Planning GPU jobs
 - Templates for making marginnotes: [Ex1](docs/Marginnote1.tex) and [Ex2](docs/Marginnote2.tex)
 - [Atlas: R -> MATLAB](docs/MATLAB-R-cheatsheet.md)
 - [R:dplyr](docs/2020-04-14-dplyr.md)
