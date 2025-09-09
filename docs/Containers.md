@@ -2,7 +2,8 @@ Containers are helpful in streamlining the environment for coding, espcially pyt
 
 Yale resource for [Apptainer (previousely singularity)](https://docs.ycrc.yale.edu/clusters-at-yale/guides/containers/) to execute codes under environments of apptainer or docker. 
 
-## 0. Check apptainer `apptainer --version`
+## 0. Install apptainer and check version
+```apptainer --version```
 
 ## 1. Directaly pull an environement from Docker Hub (https://hub.docker.com/)
 To pull the environment from the docker, use `apptainer pull [docker_dir]` as follows:
