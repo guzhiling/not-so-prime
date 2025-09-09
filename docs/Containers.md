@@ -46,7 +46,7 @@ apptainer exec --nv container_name.sif python main.py
 
 Note that the option `--nv` is important to enable GPU 
 ```
-apptainer exec --nv ../concon_ax_env_latest.sif python fitSC.py --device_num 1 --lambda_2 0.001 --max_degree 10 --rank 256 --depth 6 --cyclic --cp --viz
+apptainer exec --nv container_name.sif python main.py --device_num 1 --lambda_2 0.001 --max_degree 10 --rank 256 --depth 6 --cyclic --cp --viz
 ```
 
 
