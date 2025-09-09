@@ -4,8 +4,10 @@ Yale resource for [Apptainer (previousely singularity)](https://docs.ycrc.yale.e
 
 ## 0. Check apptainer `apptainer --version`
 
-## 1. Directaly pull a container and use it `apptainer pull container_dir_on_docker`, e.g.
-`apptainer pull docker://zhengwustat/concon_ax_env`
+## 1. Directaly pull an environement from Docker Hub (https://hub.docker.com/)
+To pull the environment from the docker, use `apptainer pull [docker_dir]` as follows:
+
+```apptainer pull docker://zhengwustat/concon_ax_env```
 
 
 In shell you would see output as follows:
@@ -17,10 +19,11 @@ INFO:    Creating SIF file...
 ```
 
 
-## 2. Build docker image from Docker Hub (https://hub.docker.com/) by `apptainer build container_name container_dir_on_docker`:
+## 2. Build docker image from Docker Hub
+To build a new environment from the docker, use `apptainer build [container_name.sif] [docker_dir]`:
 
 ```
-apptainer build tensorflow-10.0-py3.sif docker://tensorflow/tensorflow:1.10.0-py3
+apptainer build container_name.sif docker://zhengwustat/concon_ax_env
 ```
 
 
@@ -30,7 +33,6 @@ apptainer build tensorflow-10.0-py3.sif docker://tensorflow/tensorflow:1.10.0-py
 | **Customization** | ❌ No (prebuilt only) | ✅ Yes (with `.def` file) |
 | **Requires a definition file (`.def`)?** | ❌ No | ✅ Yes (for custom builds) |
 | **Speed**        | 🚀 Fast | 🏗 Slower (but customizable) |
-| **Example**      | `apptainer pull ubuntu.sif docker://ubuntu:latest` | `apptainer build my_container.sif my_container.def` |
 
 
 ## 3. Run code within the container
