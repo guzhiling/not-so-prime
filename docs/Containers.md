@@ -75,6 +75,6 @@ apptainer exec --nv concon_ax_env_latest.sif python simulations/MC_sim_study_T2.
 
 apptainer exec --nv concon_ax_env_latest.sif python simulations/MC_sim_study_T4.py 1 --data_dir simulations/T4_data --out_dir simulations/T4_data/T4_results
 
-apptainer exec --nv concon_ax_env_latest.sif python -u ./realdata/fitSC.py --device_num 0 --lambda_2 0.0001 --max_degree 10 --rank 256 --depth 6 --cyclic --viz --cp --data_dir realdata/endpoints/LH_points_euc.pt
+apptainer exec --nv concon_ax_env_latest.sif python -u realdata/fitSC.py --device_num 0 --lambda_2 0.0001 --max_degree 10 --rank 256 --depth 6 --cyclic --viz --cp --data_dir realdata/endpoints/10
 
 ```
