@@ -3,7 +3,7 @@
 
 
 ## 4 Coding Notes
-- Brain Imaging Visualization for NifTI files ([source code](docs/2025-11-18_main_brainVisualization_genAI.ipynb) | [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
+- Brain Imaging Visualization for NifTI files ([source code](docs/2025-11-18_main_brainVisualization_genAI.ipynb), [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
 - Parallel using [dSQ](docs/parallel_usingdSQ.sh)
 - [Containers](docs/Containers.md) for running code under python environments and Planning GPU jobs
 - Templates for making marginnotes: [Ex1](docs/Marginnote1.tex) and [Ex2](docs/Marginnote2.tex)
