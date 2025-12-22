@@ -1,10 +1,9 @@
 # **2 + 2 = 4 = 2^2** 
 
 
-## ⚡️Recent Finds⚡️
-- It's 2025, Embrace the [Copilot](https://code.visualstudio.com/docs/copilot/overview) and [Claude](https://github.com/kodu-ai/claude-coder)! 
 
 ## 4 Coding Notes
+- Brain Imaging Visualization for NifTI files ([source code](docs/2025-11-18_main_brainVisualization_genAI.ipynb) | [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
 - Parallel using [dSQ](docs/parallel_usingdSQ.sh)
 - [Containers](docs/Containers.md) for running code under python environments and Planning GPU jobs
 - Templates for making marginnotes: [Ex1](docs/Marginnote1.tex) and [Ex2](docs/Marginnote2.tex)
@@ -29,3 +28,4 @@
 - [National Mourn](/docs/2020-04-04-nationalmorn.md)
 - [2023 in Review](/docs/2023-in-Review.md)
 - [Links](docs/Links.md)
+- [Copilot](https://code.visualstudio.com/docs/copilot/overview) and [Claude](https://github.com/kodu-ai/claude-coder)
