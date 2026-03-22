@@ -45,9 +45,15 @@
 
       </section>
       
-      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=878080&w=a&t=n&d=ph7ZbniqNl7H_bV_ErwHBpw_6iVKahPt85lUuGV_sIQ&co=ffffff&cmo=d98181&cmn=7aba7a'></script>
       
       <footer>
+        <!-- add clustermap  -->
+        <div style="text-align:center; margin-bottom:20px;">
+        <script type='text/javascript' id='clustrmaps'
+        src='//cdn.clustrmaps.com/map_v2.js?cl=878080&w=a&t=n&d=ph7ZbniqNl7H_bV_ErwHBpw_6iVKahPt85lUuGV_sIQ&co=ffffff&cmo=d98181&cmn=7aba7a'>
+        </script>
+        </div>        
+        
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
