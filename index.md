@@ -3,7 +3,7 @@
 
 
 ## 4 Coding Notes
-- Brain Imaging Visualization for NifTI files ([source code](docs/2025-11-18_main_brainVisualization_genAI.ipynb), [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
+- [New!] Brain Imaging Visualization for NifTI files & Recent Development in Generative Models([source code](docs/2025-11-18_main_brainVisualization_genAI.ipynb), [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
 - Parallel using [dSQ](docs/parallel_usingdSQ.sh)
 - [Containers](docs/Containers.md) for running code under python environments and Planning GPU jobs
 - Templates for making marginnotes: [Ex1](docs/Marginnote1.tex) and [Ex2](docs/Marginnote2.tex)
@@ -15,8 +15,7 @@
 - [Python Commands](docs/python-commands.md)
 
 ## 2 Theory Notes
-- New! [What can we conclude from data? 🪡 Association 🪡 Prediction 🪡 Causation 🪡 Reproducibility](docs/20260202_What%20can%20we%20conclude%20from%20data.pdf)
-- New! [Brain Imaging Visualization & Recent Development in Generative Models](docs/2025-11-18-main_brainVisualization_genAI.ipynb)
+- [New!] [What can we conclude from data? 🪡 Association 🪡 Prediction 🪡 Causation 🪡 Reproducibility](docs/20260202_What%20can%20we%20conclude%20from%20data.pdf)
 - [An introduction to Topological Data Analysis (TDA) and Topological Deep Learning(TDL)](docs/TDL_ZhilingGu_20250328.pdf)
 - [Parameterizing and Simulating from Causal Models](https://github.com/calebleedy/ISU-Causal/blob/main/Presentations/ZG_053123.pdf) & [More from ISU Causal Inference Working Group](https://github.com/calebleedy/ISU-Causal/tree/main)
 - [Adaptive bootstrap tests for composite null hypotheses](https://github.com/guzhiling/ISU-Causal/blob/main/Presentations/CIWG_20231128_MediationAnalysis_Zhiling.pdf)
