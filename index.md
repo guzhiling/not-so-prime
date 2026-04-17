@@ -24,6 +24,7 @@
 
 
 ## 0 Miscellaneous 
+- Be a volunteer at [Be My Eyes](https://www.bemyeyes.com)
 - [Recipes](/docs/Recipes.md)
 - [My Watchlist of 2020](/docs/watchlist2020.md)
 - [National Mourn](/docs/2020-04-04-nationalmorn.md)
