@@ -25,6 +25,7 @@
 
 ## 0 Miscellaneous 
 - Be a volunteer at [Be My Eyes](https://www.bemyeyes.com)
+- Watch for birds and record your birding at [ebird](https://ebird.org) ([my profile](https://ebird.org/profile/NjQ3MDc3NA))
 - [Recipes](/docs/Recipes.md)
 - [My Watchlist of 2020](/docs/watchlist2020.md)
 - [National Mourn](/docs/2020-04-04-nationalmorn.md)
