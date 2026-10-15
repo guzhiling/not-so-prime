@@ -24,6 +24,7 @@
 
 
 ## 0 Miscellaneous 
+- A zotero plugin with [lolPing wheel](https://github.com/guzhiling/lolping_zotero) -- ping while reading!  
 - Be a volunteer at [Be My Eyes](https://www.bemyeyes.com)
 - Watch for birds and record your birding at [ebird](https://ebird.org) ([my profile](https://ebird.org/profile/NjQ3MDc3NA))
 - [Recipes](https://github.com/guzhiling/not-so-prime/blob/main/docs/Recipes.md)
