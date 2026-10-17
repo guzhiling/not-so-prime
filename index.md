@@ -3,7 +3,7 @@
 
 
 ## 4 Coding Notes
-- [New!] Brain Imaging Visualization for NifTI files & Recent Development in Generative Models([source code](https://github.com/guzhiling/not-so-prime/blob/main/docs/2025-11-18_main_brainVisualization_genAI.ipynb), [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
+- Brain Imaging Visualization for NifTI files & Recent Development in Generative Models([source code](https://github.com/guzhiling/not-so-prime/blob/main/docs/2025-11-18-main_brainVisualization_genAI.ipynb), [colab notebook](https://drive.google.com/file/d/1Vjs9Js9Zei_iQn5_7LeuDbqtsH3EPIzW/view?usp=sharing))
 - Parallel using [dSQ](https://github.com/guzhiling/not-so-prime/blob/main/docs/parallel_usingdSQ.sh)
 - [Containers](https://github.com/guzhiling/not-so-prime/blob/main/docs/Containers.md) for running code under python environments and Planning GPU jobs
 - Templates for making marginnotes: [Ex1](https://github.com/guzhiling/not-so-prime/blob/main/docs/Marginnote1.tex) and [Ex2](https://github.com/guzhiling/not-so-prime/blob/main/docs/Marginnote2.tex)
@@ -15,7 +15,7 @@
 - [Python Commands](https://github.com/guzhiling/not-so-prime/blob/main/docs/python-commands.md)
 
 ## 2 Theory Notes
-- [New!] [What can we conclude from data? 🪡 Association 🪡 Prediction 🪡 Causation 🪡 Reproducibility](https://github.com/guzhiling/not-so-prime/blob/main/docs/2025-11-18-main_brainVisualization_genAI.ipynb)
+- [What can we conclude from data? 🪡 Association 🪡 Prediction 🪡 Causation 🪡 Reproducibility](https://github.com/guzhiling/not-so-prime/blob/main/docs/2025-11-18-main_brainVisualization_genAI.ipynb)
 - [An introduction to Topological Data Analysis (TDA) and Topological Deep Learning(TDL)](https://github.com/guzhiling/not-so-prime/blob/main/docs/TDL_ZhilingGu_20250328.pdf)
 - [Parameterizing and Simulating from Causal Models](https://github.com/calebleedy/ISU-Causal/blob/main/Presentations/ZG_053123.pdf) & [More from ISU Causal Inference Working Group](https://github.com/calebleedy/ISU-Causal/tree/main)
 - [Adaptive bootstrap tests for composite null hypotheses](https://github.com/guzhiling/ISU-Causal/blob/main/Presentations/CIWG_20231128_MediationAnalysis_Zhiling.pdf)
